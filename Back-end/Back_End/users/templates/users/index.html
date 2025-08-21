@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recuperación de Contraseña</title>
+  <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+</head>
+<body>
+  <div id="app">
+    <el-container>
+      <el-header>
+        <h1 style="text-align: center;">Recuperación de Contraseña</h1>
+      </el-header>
+      <el-main>
+        <el-card class="box-card">
+          <p>¡Hola!</p>
+          <p>Recibes este correo electrónico porque solicitaste restablecer la contraseña de tu cuenta.</p>
+          <p>Tu nueva contraseña es: <strong>{{new_password}}</strong></p>
+          <p>Te recomendamos cambiar esta contraseña por una más segura tan pronto como inicies sesión.</p>
+          <p>Gracias.</p>
+        </el-card>
+      </el-main>
+      <el-footer>
+        <p style="text-align: center;">Este correo electrónico fue generado automáticamente. Por favor, no respondas a este mensaje.</p>
+        <img  style="width:40%" src="data:image/png;base64,{{ EMAIL_IMAGE_URL }}" alt="Logo">
+      </el-footer>
+    </el-container>
+  </div>
+  <script src="https://unpkg.com/vue/dist/vue.js"></script>
+  <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+</body>
+</html>
